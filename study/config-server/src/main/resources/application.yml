@@ -1,0 +1,14 @@
+server:
+  port: 7777
+
+spring:
+  cloud:
+    config:
+      server:
+        svn:
+          uri: https://liuyili-pc/svn/docs/trunk/config
+          username: liuyili
+          password: liuyili
+        default-label: config-server
+  profiles:
+    active: subversion
